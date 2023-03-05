@@ -7,6 +7,7 @@ public class TestString {
         String outputString = "";
         char ch ;
 
+        // Add comment
         for(int i =inputString.length()-1 ; i >=0 ; --i){
             ch= inputString.charAt(i);
             outputString = outputString+ch;
