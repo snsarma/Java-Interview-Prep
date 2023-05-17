@@ -9,6 +9,9 @@ public class ElementChallenge {
         System.out.println("Integer Values");
         System.out.println(Arrays.toString(integerValues));
         System.out.println("Minimum value is:"+min);
+        int [] returnedArray = reverse(integerValues);
+        System.out.println("Reversed Array-----");
+        System.out.println(Arrays.toString(returnedArray));
     }
 
     // Method to build the array of Integers
@@ -41,5 +44,22 @@ public class ElementChallenge {
         }
 
         return min;
+    }
+
+    private static int[] reverse(int [] array){
+
+        int maxIndex = array.length-1;
+        int halfLength = array.length/2;
+        int temp;
+
+        // Just swap until the middle element once that is reached the elements would be Reversed
+        for(int i=0 ; i < halfLength ; i++){
+            temp = array[i];
+            array[i] = array[maxIndex-i];
+            array[maxIndex-i] = temp;
+
+        }
+
+        return array;
     }
 }
