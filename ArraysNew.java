@@ -53,6 +53,7 @@ public class ArraysNew {
             System.out.println("Mark is not found!");
         }
 
+        // Order and Length matters , not just the content for equality
         if(Arrays.equals(thirdArray,fourthArray)){ // Check contents in both the arrays are equal
             System.out.println("They are equal");
         }else {
