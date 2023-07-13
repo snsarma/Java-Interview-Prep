@@ -36,7 +36,10 @@ public class Main {
 //            }
 //        }); // Anonymous class
 
-        person.sort((o1, o2) -> (o1.lastName()).compareTo(o2.lastName())); // Replaced by Lambda expression
+      //  person.sort((o1, o2) -> (o1.lastName()).compareTo(o2.lastName())); // Replaced by Lambda expression
+
+        person.sort(Comparator.comparing(Person::lastName)); // Replaced by Lambda expression , Method References
+
 
         System.out.println("person sorted :"+person);
 
